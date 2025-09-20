@@ -4,20 +4,20 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 const experience = [
   {
     title: 'Mantenimiento y Migración de la plataforma "Póliza de Rentas"',
-     description: 'Backend y Frontend en Periodo de Prácticas Profesionales. [cite: 37]',
+     description: 'Backend y Frontend en Periodo de Prácticas Profesionales.',
   },
   {
     title: 'Líder en la creación de una plataforma tipo Classroom',
-     description: 'Para el Instituto de Idiomas de la Universidad Tecnológica de la Mixteca (Servicio Social en curso Actualmente). [cite: 38]',
+     description: 'Para el Instituto de Idiomas de la Universidad Tecnológica de la Mixteca (Servicio Social en curso Actualmente).',
   },
   {
     title: 'Proyectos de Clase',
     list: [
-       'Creación de Punto de Venta [cite: 32]',
-       'Traductor de Codigo C a Codigo Pascal [cite: 33]',
-       'Compilador de una Versión de C [cite: 34]',
-       'Creación de una Estación Meteorológica en tiempo real [cite: 35]',
-       'Plataforma para Aprender Lenguaje de Señas [cite: 36]',
+       'Creación de Punto de Venta',
+       'Traductor de Codigo C a Codigo Pascal',
+       'Compilador de una Versión de C',
+       'Creación de una Estación Meteorológica en tiempo real',
+       'Plataforma para Aprender Lenguaje de Señas',
     ],
   },
 ];
