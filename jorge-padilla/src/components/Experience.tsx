@@ -1,5 +1,8 @@
+// src/components/Experience.tsx
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import '../styles/Experience.css';
 
 const experience = [
@@ -23,27 +26,43 @@ const experience = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+};
+
 const Experience: React.FC = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   return (
-    <section id="experience" className="experience-section py-5">
+    <section id="experience" className="experience-section py-5" ref={ref}>
       <Container>
         <h2 className="text-center mb-4">Experiencia</h2>
         <Row className="justify-content-center">
           {experience.map((item, index) => (
             <Col md={6} lg={4} key={index} className="mb-4">
-              <Card>
-                <Card.Body>
-                  <Card.Title>{item.title}</Card.Title>
-                  {item.description && <Card.Text>{item.description}</Card.Text>}
-                  {item.list && (
-                    <ul>
-                      {item.list.map((project, i) => (
-                        <li key={i}>{project}</li>
-                      ))}
-                    </ul>
-                  )}
-                </Card.Body>
-              </Card>
+              <motion.div
+                variants={cardVariants}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+              >
+                <Card>
+                  <Card.Body>
+                    <Card.Title>{item.title}</Card.Title>
+                    {item.description && <Card.Text>{item.description}</Card.Text>}
+                    {item.list && (
+                      <ul>
+                        {item.list.map((project, i) => (
+                          <li key={i}>{project}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </Col>
           ))}
         </Row>
