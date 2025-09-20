@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import '../styles/Hero.css';
 
 const Hero: React.FC = () => {
   return (
-    <div id="home" className="d-flex align-items-center justify-content-center" style={{ minHeight: '100vh', backgroundColor: '#f8f9fa' }}>
+    <div id="home" className="hero-section d-flex align-items-center justify-content-center">
       <Container className="text-center">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

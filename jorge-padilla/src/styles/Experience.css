@@ -1,0 +1,8 @@
+.experience-section {
+    background-color: var(--section-bg);
+  }
+  
+  .experience-section .card {
+    background-color: var(--card-bg);
+    transition: all 0.3s;
+  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCode, FaLaptopCode } from 'react-icons/fa';
+import '../styles/Skills.css';
 
 const skills = {
   languages: [
@@ -13,7 +14,7 @@ const skills = {
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-5 bg-light">
+    <section id="skills" className="skills-section py-5">
       <Container>
         <h2 className="text-center mb-4">Habilidades</h2>
         <Row className="justify-content-center">
@@ -24,7 +25,7 @@ const Skills: React.FC = () => {
                 <ul className="list-unstyled d-flex flex-wrap justify-content-center">
                   {skills.languages.map((skill, index) => (
                     <li key={index} className="m-2">
-                      <span className="badge bg-primary">{skill}</span>
+                      <span className="badge">{skill}</span>
                     </li>
                   ))}
                 </ul>
@@ -38,7 +39,7 @@ const Skills: React.FC = () => {
                 <ul className="list-unstyled d-flex flex-wrap justify-content-center">
                   {skills.frameworks.map((skill, index) => (
                     <li key={index} className="m-2">
-                      <span className="badge bg-primary">{skill}</span>
+                      <span className="badge">{skill}</span>
                     </li>
                   ))}
                 </ul>
