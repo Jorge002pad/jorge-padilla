@@ -36,10 +36,7 @@ const Footer: React.FC = () => {
         </Row>
         <div className="mt-5 pt-3 border-top">
             <p className="mb-0">
-                Ubicación: José María Morelos, Núcleo Rural Universitario, Acatlima, Huajuapan de León, Oax
-            </p>
-            <p className="mb-0">
-                Formación Académica: Universidad Tecnológica de la Mixteca (2020-2025)
+                2025
             </p>
         </div>
       </Container>

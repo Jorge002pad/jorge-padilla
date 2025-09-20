@@ -1,10 +1,10 @@
 .footer-section {
   background-color: var(--section-bg-alt);
-  border-top: 1px solid var(--text-color);
+  border-top: 1px solid var(--border-color);
   margin-bottom: 0;
 }
-  
-  .footer-section a {
-    color: var(--text-color);
-    text-decoration: none;
-  }
+
+.footer-section a {
+  color: var(--text-color);
+  text-decoration: none;
+}

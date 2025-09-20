@@ -1,9 +1,9 @@
 .skills-section {
-    background-color: var(--section-bg-alt);
-  }
-  
-  .skills-section .card {
-    border: 1px solid var(--primary-color);
-    background-color: var(--card-bg);
-    transition: all 0.3s;
-  }
+  background-color: var(--section-bg-alt);
+}
+
+.skills-section .card {
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  transition: all 0.3s;
+}
