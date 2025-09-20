@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="display-4 fw-bold">JORGE LUIS PADILLA MARTINEZ</h1>
-          [cite_start]<p className="lead text-muted">Estudiante Ingeniería en Computación</p>
+          <p className="lead text-muted">Estudiante Ingeniería en Computación</p>
         </motion.div>
       </Container>
     </div>
