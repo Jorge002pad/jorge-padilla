@@ -2,9 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
-const Contact: React.FC = () => {
+const Footer: React.FC = () => {
   return (
-    <section id="contact" className="py-5 bg-light">
+    <footer className="bg-dark text-white text-center py-3">
+      <Container>
+      <section id="contact">
       <Container>
         <h2 className="text-center mb-4">Contacto</h2>
         <Row className="justify-content-center text-center">
@@ -35,7 +37,9 @@ const Contact: React.FC = () => {
         </Row>
       </Container>
     </section>
+      </Container>
+    </footer>
   );
 };
 
-export default Contact;
+export default Footer;

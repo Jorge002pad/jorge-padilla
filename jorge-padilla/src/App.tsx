@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 const App: React.FC = () => {
@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <AboutMe />
       <Skills />
       <Experience />
-      <Contact />
+      <Footer />
     </>
   );
 };
